@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    DOCKER_HUB_USER = 'ramanijadala'       
+    DOCKER_HUB_USER = 'navyadevopsaws25'       
     IMAGE_BASE = 'todo-app'
     IMAGE_TAG = "build-${BUILD_NUMBER}"
     LOCAL_IMAGE = "${IMAGE_BASE}:${IMAGE_TAG}"
@@ -14,7 +14,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/jadalaramani/todo_cicd_end-end_project.git'
+        git branch: 'main', url: 'https://github.com/navyadevopsaws25-cyber/todo_cicd_end-end_project.git'
       }
     }
 
