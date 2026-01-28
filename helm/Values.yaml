@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: devopshubg333/todo-app
+  repository: navyadevopsaws25/todo-app
   tag: latest
   pullPolicy: IfNotPresent
 
