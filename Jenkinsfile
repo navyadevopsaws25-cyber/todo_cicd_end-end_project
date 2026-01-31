@@ -75,7 +75,7 @@ stage('QUALITY GATE') {
       steps {
         script {
           sh "docker rm -f $CONTAINER_NAME || true"
-          sh "docker run -d --name $CONTAINER_NAME -p $PORT:3001 $LOCAL_IMAGE"
+          sh "docker run -d --name $CONTAINER_NAME -p $PORT:3000 $LOCAL_IMAGE"
         }
       }
     }
